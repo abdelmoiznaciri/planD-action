@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flex flex-col gap-5 justify-center">
+        <div class="px-20 pt-10">
+            <p class=" pl-3 block text-sm font-medium text-heading">First name</p>
+            <span id="errorMessage" class="text-[10px] pl-3 text-red-700"></span>
+            <div class="flex gap-10">
+                <div class="flex flex-col gap-2 w-full ">
+                    <input type="text" id="articleInput"
+                        class="pl-5 border border-[#EBEFEA] shadow-xs rounded-2xl text-heading text-sm w-full px-3 py-2.5 shadow-xs"
+                        placeholder="Entrer un article">
+
+                </div>
+                <button id="boutonAjout"
+                    class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Ajouter</button>
+            </div>
+        </div>
+        <div id="articlesCreer" class="w-full pl-20 flex gap-5">
+            <p
+                class="px-2 border border-[#EBEFEA] shadow-xs rounded-2xl text-heading text-sm px-3 py-2.5 shadow-xs">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button id="deleteButon"
+                class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full">Supprimer</button>
+                <button id="deleteButon"
+                class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full">Acheter</button>
+        </div>
+    </div>
+    <script src=" exercice7.js"></script>
+</body>
+
+</html>
